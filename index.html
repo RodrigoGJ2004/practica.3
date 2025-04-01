@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="estilos/principal.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <input type="text" placeholder="http://miblog" class="url-bar">
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Mi Blog</h1>
+
+        <!-- Menú lateral -->
+        <div class="sidebar">
+            <h3>Opciones</h3>
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+            
+            <h3>Fecha de publicación:</h3>
+            <p id="fecha"></p>
+
+            <h3>Archivos</h3>
+            <ul>
+                <li>2025 > Febrero
+                    <ul>
+                        <li><a href="#">Línea del tiempo</a></li>
+                        <li><a href="#">Nuestra música</a></li>
+                        <li><a href="#">Imágenes usadas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <h2>Creadores</h2>
+            <ul class="creadores-lista">
+                <li><a href="rodrigo.html">Rodrigo</a></li>
+                <li><a href="luz.html">Luz Abril</a></li>
+                <li><a href="fer1.html">Fernanda</a></li>
+                <li><a href="astrid.html">Astrid</a></li>
+            </ul>
+
+            <div class="multimedia">
+                <video controls width="60px">
+                    <source src="videos/grupal.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>Derechos Reservados 2025</p>
+        <button onclick="location.href='rodrigo.html'" class="boton-siguiente">→</button>
+    </div>
+
+    <script>
+        // Mostrar la fecha actual
+        document.getElementById("fecha").innerText = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>

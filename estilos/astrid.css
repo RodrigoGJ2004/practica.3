@@ -1,0 +1,139 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #ff758c;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav button {
+    background-color: #ffb199;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #ff758c;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    nav button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Sección de contenido */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff758c;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Estilos para imágenes y videos */
+.imagen-perfil,
+.imagen-academia,
+video {
+    max-width: 400px; /* Ajusta el tamaño para que todas las imágenes coincidan con el video */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Aseguramos que las imágenes no sean demasiado grandes */ 
+.imagen-musica, .imagen-hobbies {
+    max-width: 100%; /* Esto asegura que las imágenes no excedan el tamaño del contenedor */
+    height: auto;    /* Esto mantiene la proporción de la imagen */
+    display: block;  /* Asegura que las imágenes sean tratadas como bloque (elimina el espacio abajo de ellas) */
+    margin-bottom: 20px; /* Añadimos un poco de espacio debajo de la imagen */
+}
+
+/* Aseguramos que las imágenes no sean demasiado grandes */ 
+.imagen-musica, .imagen-hobbies {
+    max-width: 100%; /* Esto asegura que las imágenes no excedan el tamaño del contenedor */
+    height: auto;    /* Esto mantiene la proporción de la imagen */
+    display: block;  /* Asegura que las imágenes sean tratadas como bloque (elimina el espacio abajo de ellas) */
+    margin: 0 auto;  /* Centra la imagen */
+    margin-bottom: 20px; /* Añadimos un poco de espacio debajo de la imagen */
+}
+
+/* Puedes agregar un límite de tamaño específico si lo deseas */
+.imagen-musica {
+    max-width: 300px; /* Ajusta según lo que prefieras */
+}
+
+.imagen-hobbies {
+    max-width: 250px; /* Ajusta según lo que prefieras */
+}

@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #d9d9d9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.url-bar {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Sidebar (Menú lateral) */
+.sidebar {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.sidebar h3 {
+    color: #007BFF;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    position: relative;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+    color: #0056b3;
+}
+
+/* Contenido principal */
+.content {
+    width: 75%;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.creadores-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.creadores-lista li {
+    margin: 5px 0;
+}
+
+.creadores-lista li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.creadores-lista li a:hover {
+    color: #0056b3;
+}
+
+/* Multimedia */
+.multimedia video, .multimedia audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botón de siguiente */
+.boton-siguiente {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-siguiente:hover {
+    color: #007BFF;
+}
